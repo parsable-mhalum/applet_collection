@@ -1,0 +1,26 @@
+{
+  "title": "Update Jobs",
+  "method": "API",
+  "api": {
+    "method": "POST",
+    "baseURL": {
+      "US": "https://api.parsable.net/api",
+      "EU": "https://api.eu-west-1.parsable.net/api"
+    },
+    "endpoint": "/jobs",
+    "headers": {
+      "Accept": "application/json",
+      "Content-Type": "application/json",
+      "Authorization": "<AuthToken>",
+      "body": {
+        "method": "updateJob",
+        "arguments": {
+          "jobId": "Job UUID",
+          "params": {
+            "title": "Job Title - Field Value_Field Value_Field Value_Field Value"
+          }
+        }
+      }
+    }
+  }
+}

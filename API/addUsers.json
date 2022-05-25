@@ -1,0 +1,25 @@
+{
+  "title": "Add User to Job",
+  "method": "API",
+  "api": {
+    "method": "POST",
+    "baseURL": {
+      "US": "https://api.parsable.net/api",
+      "EU": "https://api.eu-west-1.parsable.net/api"
+    },
+    "endpoint": "/jobs",
+    "headers": {
+      "Accept": "application/json",
+      "Content-Type": "application/json",
+      "Authorization": "<AuthToken>",
+      "body": {
+        "method": "addUser",
+        "arguments": {
+          "jobId": "Job UUID",
+          "email": "Field Value",
+          "jobRoleId": "Role UUID"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Update Jobs",
+  "method": "API",
+  "api": {
+    "method": "POST",
+    "baseURL": {
+      "US": "https://api.parsable.net/api",
+      "EU": "https://api.eu-west-1.parsable.net/api"
+    },
+    "endpoint": "/reports",
+    "headers": {
+      "Accept": "application/json",
+      "Content-Type": "application/json",
+      "Authorization": "<AuthToken>",
+      "body": {
+        "method": "generateJobReportForEmails",
+        "arguments": {
+          "jobId": "Job UUID",
+          "params": {
+            "showAppendix": "true",
+            "showDescrip": "false",
+            "showInput": "true",
+            "showLog-1": "true",
+            "showParticipants": "false",
+            "showSteps": "true",
+            "showMetadata": "false",
+            "showParams": "false",
+            "showTimeStamp": "true",
+            "templateNA": "true",
+            "fieldsNA": "true",
+            "stepGroupsNA": "true"
+          },
+          "emails": ["user@email.com"]
+        }
+      }
+    }
+  }
+}
